@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "73b7dfbb-1de4-4048-a289-597bc12e073f",
+		"name": "DATA Connect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3572217"
+	},
+	"item": [
+		{
+			"name": "Data Connect Details",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P4ssword2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CiscoLive",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/mnt/data-connect/details",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mnt",
+						"data-connect",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Connect:Settings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P4ssword2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CiscoLive",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/mnt/data-connect/details",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mnt",
+						"data-connect",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Connect: Update Password",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P4ssword2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CiscoLive",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"NewPassword2023#\"\n}\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/mnt/data-connect/settings/password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mnt",
+						"data-connect",
+						"settings",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Connect: Update Password Expiry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P4ssword2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CiscoLive",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"passwordExpiresInDays\": 45\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/mnt/data-connect/settings/password/expiry",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mnt",
+						"data-connect",
+						"settings",
+						"password",
+						"expiry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Connect: Update Feature Status (Enable or Disable)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P4ssword2023",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CiscoLive",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"passwordExpiresInDays\": 45\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/mnt/data-connect/settings/password/expiry",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mnt",
+						"data-connect",
+						"settings",
+						"password",
+						"expiry"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
