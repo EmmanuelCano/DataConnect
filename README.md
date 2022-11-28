@@ -2,9 +2,10 @@
 DataConnect API Postman Collection
 
 
-#Possible Results
+# Possible Results
 
-Set a Password that does not match password criteria
+# Set a Password that does not match password criteria
+
 {
     "error": {
         "message": "Unable to update Dataconnect password. Invalid Password : Password does not contains at least one special character #$%&*+,-.:;=?^_~. "
@@ -12,7 +13,7 @@ Set a Password that does not match password criteria
     "version": "1.0.0"
 }
 
-
+# Password Updated Successfully 
 {
     "success": {
         "message": "Dataconnect password has been updated successfully"
@@ -21,16 +22,16 @@ Set a Password that does not match password criteria
 }
 
 
-Password Expiry 
+# Password Expiry 
 {
     "success": {
-        "message": "Dataconnect password expiry has been updated successfully as 3 
-days"
+        "message": "Dataconnect password expiry has been updated successfully as 3  days"
     },
     "version": "1.0.0"
 }
 
-Update Feature Status: Enable/Disable
+# Update Feature Status: Enable
+
 Enable
 {
     "error": {
@@ -39,7 +40,7 @@ Enable
     "version": "1.0.0"
 }
 
-Disable
+#  Update Feature Status: Disable
 {
     "success": {
         "message": "Dataconnect Setting has been disabled and dataconnect certificate removed from trust store successfully"
