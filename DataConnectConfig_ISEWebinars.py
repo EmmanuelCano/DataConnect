@@ -16,7 +16,7 @@ import sys
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-clbanner = pyfiglet.figlet_format("Cisco Live Amsterdam  Devnet 2035!!")
+clbanner = pyfiglet.figlet_format("Cisco Live Amsterdam Devnet 2035!!")
 print(clbanner)
 
 #Variables to be used in functions
