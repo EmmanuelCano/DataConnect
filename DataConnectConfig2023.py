@@ -70,7 +70,7 @@ def set_password():
 
 def set_password_expiration():
   #This function configures the password expiration date in days
-  #The valid range is from 1 to 3650 days. The default value is 90 days
+  #The valid range is from 1 to 365 days. The default value is 90 days
 
     url = "https://" + ISENODE+ "/api/v1/mnt/data-connect/settings/password/expiry"
     payload = json.dumps({"passwordExpiresInDays": 370}) 
