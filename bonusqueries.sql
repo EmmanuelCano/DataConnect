@@ -1,0 +1,2 @@
+select Policy_Set_Name,authorization_rule,authentication_protocol,username,framed_ip_address from radius_authentications;
+select Policy_Set_Name,authorization_rule,authentication_protocol,username,framed_ip_address from radius_authentications where framed_ip_address != 'null';
